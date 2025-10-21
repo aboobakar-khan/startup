@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Startups Make Money | SHS JMI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #fdfbfb 0%, #f7f4f9 100%);
+            color: #2d3748;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .tagline {
+            font-size: 0.9rem;
+            opacity: 0.95;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        
+        .institute {
+            font-size: 0.75rem;
+            margin-top: 0.3rem;
+            opacity: 0.85;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        
+        /* Day Header */
+        .day-header {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            text-align: center;
+        }
+        
+        .day-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.4rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+        
+        .day-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+        
+        .day-subtitle {
+            font-size: 1rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+        
+        /* Tip Box */
+        .tip-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: 12px;
+            padding: 1.2rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #f59e0b;
+            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.1);
+        }
+        
+        .tip-icon {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tip-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #92400e;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tip-text {
+            color: #78350f;
+            font-size: 0.95rem;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+        
+        /* Section Card */
+        .section {
+            background: white;
+            border-radius: 16px;
+            padding: 1.8rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            border-left: 4px solid #667eea;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        
+        .section-icon {
+            font-size: 1.5rem;
+        }
+        
+        .section-content {
+            color: #4a5568;
+            font-size: 0.95rem;
+        }
+        
+        .section-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .section-content strong {
+            color: #2d3748;
+            font-weight: 600;
+        }
+        
+        /* Subsection */
+        .subsection {
+            background: #f8f9fc;
+            border-radius: 12px;
+            padding: 1.2rem;
+            margin: 1.2rem 0;
+            border-left: 3px solid #a78bfa;
+        }
+        
+        .subsection-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.8rem;
+        }
+        
+        /* Info Box */
+        .info-box {
+            background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 100%);
+            border-radius: 12px;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-left: 3px solid #8b5cf6;
+        }
+        
+        .info-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #6d28d9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.4rem;
+        }
+        
+        .info-text {
+            font-size: 0.9rem;
+            color: #4c1d95;
+            line-height: 1.6;
+        }
+        
+        /* List Styles */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        li {
+            padding: 0.6rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #4a5568;
+            font-size: 0.95rem;
+        }
+        
+        li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-radius: 12px;
+            padding: 1.2rem;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 0.3rem;
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            color: #1e3a8a;
+            font-weight: 500;
+        }
+        
+        /* Example Box */
+        .example-box {
+            background: #ecfdf5;
+            border-radius: 12px;
+            padding: 1.2rem;
+            margin: 1rem 0;
+            border-left: 3px solid #10b981;
+        }
+        
+        .example-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #065f46;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.6rem;
+        }
+        
+        .example-text {
+            font-size: 0.9rem;
+            color: #047857;
+            line-height: 1.6;
+        }
+        
+        /* Key Takeaways */
+        .takeaway-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .takeaway-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .takeaway-box li {
+            color: #1e3a8a;
+            padding: 0.5rem 0;
+        }
+        
+        .takeaway-box li:before {
+            content: "✓";
+            color: #3b82f6;
+        }
+        
+        /* Footer */
+        .footer {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            text-align: center;
+        }
+        
+        .footer-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+        
+        .next-topic {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            margin: 1rem 0;
+            font-weight: 500;
+        }
+        
+        /* Scroll Progress */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            width: 0%;
+            z-index: 1000;
+            transition: width 0.1s ease;
+        }
+        
+        /* Responsive */
+        @media (max-width: 640px) {
+            .day-title {
+                font-size: 1.4rem;
+            }
+            
+            .section-title {
+                font-size: 1.15rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Feedback Buttons */
+        .feedback-btn {
+            background: white;
+            border: 3px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 1.2rem 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+            min-width: 85px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .feedback-btn:hover {
+            border-color: #667eea;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .feedback-btn:active {
+            transform: translateY(-2px);
+        }
+        
+        .feedback-btn.selected {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-color: #667eea;
+            color: white;
+            animation: pulse 0.5s ease;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .feedback-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .feedback-btn:disabled:hover {
+            transform: none;
+            border-color: #e2e8f0;
+        }
+        
+        .rating-bar {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0.4rem 0;
+            font-size: 0.75rem;
+        }
+        
+        .rating-bar-label {
+            width: 60px;
+            color: #4a5568;
+        }
+        
+        .rating-bar-fill {
+            flex: 1;
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .rating-bar-inner {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.5s ease;
+        }
+        
+        .rating-bar-count {
+            width: 30px;
+            text-align: right;
+            color: #718096;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <div class="header">
+        <div class="logo">Startup & Hackathon Society</div>
+        <div class="tagline">DREAM2REALITY</div>
+        <div class="institute">Jamia Millia Islamia</div>
+    </div>
+    
+    <div class="container">
+        <div class="day-header">
+            <div class="day-number">DAY 2</div>
+            <h1 class="day-title">How Startups Make Money</h1>
+            <p class="day-subtitle">Business Models & Revenue Streams</p>
+        </div>
+        
+        <div class="tip-box">
+            <div class="tip-icon">💡</div>
+            <div class="tip-label">Tip for Beginners</div>
+            <div class="tip-text">
+                Don't build first, validate first. Talk to 20 potential users before writing a single line of code. Most failures happen because people build what nobody wants.
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">
+                <span class="section-icon">🎯</span>
+                Business Model vs Revenue Model
+            </h2>
+            <div class="section-content">
+                <div class="info-box">
+                    <div class="info-label">Business Model</div>
+                    <div class="info-text">
+                        The overall strategy of how a company creates, delivers, and captures value.
+                    </div>
+                </div>
+                
+                <div class="info-box">
+                    <div class="info-label">Revenue Model</div>
+                    <div class="info-text">
+                        The specific way a company makes money from its business model.
+                    </div>
+                </div>
+                
+                <div class="example-box">
+                    <div class="example-title">Example: Zomato</div>
+                    <div class="example-text">
+                        <strong>Business Model:</strong> Connect restaurants with customers through digital platform<br><br>
+                        <strong>Revenue Models:</strong><br>
+                        • Commission from restaurants<br>
+                        • Delivery fees from customers<br>
+                        • Zomato Gold subscriptions<br>
+                        • Restaurant advertising
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">
+                <span class="section-icon">💰</span>
+                The 8 Major Revenue Models
+            </h2>
+            <div class="section-content">
+                
+                <div class="subsection">
+                    <div class="subsection-title">1. Commission-Based</div>
+                    <p><strong>How it works:</strong> Take percentage of every transaction</p>
+                    <div class="example-box">
+                        <div class="example-title">Examples</div>
+                        <div class="example-text">
+                            • Flipkart: 10-20% from sellers<br>
+                            • Ola/Uber: 20-25% per ride<br>
+                            • Airbnb: 3% from hosts, 14% from guests
+                        </div>
+                    </div>
+                    <p><strong>Pros:</strong> Scales with transaction volume<br>
+                    <strong>Cons:</strong> Need high volume to be profitable</p>
+                </div>
+                
+                <div class="subsection">
+                    <div class="subsection-title">2. Subscription Model</div>
+                    <p><strong>How it works:</strong> Users pay recurring fee (monthly/yearly)</p>
+                    <div class="example-box">
+                        <div class="example-title">Examples</div>
+                        <div class="example-text">
+                            • Netflix: ₹199-649/month<br>
+                            • Spotify: ₹119/month<br>
+                            • Amazon Prime: ₹1,499/year
+                        </div>
+                    </div>
+                    <p><strong>Variants:</strong> Freemium, Tiered pricing, Usage-based<br>
+                    <strong>Pros:</strong> Predictable revenue<br>
+                    <strong>Cons:</strong> Must deliver constant value</p>
+                </div>
+                
+                <div class="subsection">
+                    <div class="subsection-title">3. Marketplace Model</div>
+                    <p><strong>How it works:</strong> Connect buyers and sellers, earn from both</p>
+                    <div class="example-box">
+                        <div class="example-title">Examples</div>
+                        <div class="example-text">
+                            • OLX: Free listings, paid promotions<br>
+                            • Meesho: Commission from suppliers<br>
+                            • UrbanClap: Service fee from professionals
+                        </div>
+                    </div>
+                    <p><strong>Revenue Sources:</strong> Listing fees, Featured placements, Transaction commissions, Advertising</p>
+                </div>
+                
+                <div class="subsection">
+                    <div class="subsection-title">4. Advertising Model</div>
+                    <p><strong>How it works:</strong> Offer free service, make money from ads</p>
+                    <div class="example-box">
+                        <div class="example-title">Examples</div>
+                        <div class="example-text">
+                            • Google: Search free, ads generate $200B+<br>
+                            • Facebook/Instagram: Free platform, ad revenue<br>
+                            • YouTube: Free videos, ads + premium
+                        </div>
+                    </div>
+                    <p><strong>Reality:</strong> Only works at massive scale (millions of users)</p>
+                </div>
+                
+                <div class="subsection">
+                    <div class="subsection-title">5. SaaS (Software as a Service)</div>
+                    <p><strong>How it works:</strong> Sell software on subscription to businesses</p>
+                    <div class="example-box">
+                        <div class="example-title">Examples</div>
+                        <div class="example-text">
+                            • Zoho: ₹125-1,250/user/month<br>
+                            • Freshworks: Customer support software<br>
+                            • Razorpay: Payment processing + fees
+                        </div>
+                    </div>
+                    <p><strong>Advantage:</strong> B2B customers pay more than consumers</p>
+                </div>
+                
+                <div class="subsection">
+                    <div class="subsection-title">6. Freemium Model</div>
+                    <p><strong>How it works:</strong> Basic version free, advanced features paid</p>
+                    <div class="example-box">
+                        <div class="example-title">Examples</div>
+                        <div class="example-text">
+                            • LinkedIn: Free profile, Premium ₹1,600/month<br>
+                            • Canva: Free templates, Pro ₹500/month<br>
+                            • Grammarly: Free checks, Premium for advanced
+                        </div>
+                    </div>
+                    <p><strong>Reality:</strong> 2-5% free users convert to paid. Need millions of users.</p>
+                </div>
+                
+                <div class="subsection">
+                    <div class="subsection-title">7. Transaction Fee Model</div>
+                    <p><strong>How it works:</strong> Charge per transaction processed</p>
+                    <div class="example-box">
+                        <div class="example-title">Examples</div>
+                        <div class="example-text">
+                            • Razorpay: 2% per transaction<br>
+                            • PayTM: Merchant fees<br>
+                            • PhonePe: UPI free (monetize other services)
+                        </div>
+                    </div>
+                    <p><strong>Math:</strong> Process ₹100Cr/month × 2% fee = ₹2Cr revenue</p>
+                </div>
+                
+                <div class="subsection">
+                    <div class="subsection-title">8. Direct Sales (D2C)</div>
+                    <p><strong>How it works:</strong> Manufacture and sell directly, no middlemen</p>
+                    <div class="example-box">
+                        <div class="example-title">Examples</div>
+                        <div class="example-text">
+                            • Boat: Earphones, speakers (₹3,000Cr+ revenue)<br>
+                            • Mamaearth: Beauty products<br>
+                            • Lenskart: Eyewear
+                        </div>
+                    </div>
+                    <p><strong>Advantage:</strong> Higher margins (40-60% vs 10-20% in retail)</p>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">
+                <span class="section-icon">🧮</span>
+                Unit Economics Explained
+            </h2>
+            <div class="section-content">
+                <p><strong>Definition:</strong> Revenue and costs associated with a single unit of business</p>
+                
+                <div class="example-box">
+                    <div class="example-title">Food Delivery Example</div>
+                    <div class="example-text">
+                        <strong>Revenue per order:</strong><br>
+                        • Food cost: ₹300<br>
+                        • Delivery fee: ₹40<br>
+                        • Platform commission (30%): ₹90<br>
+                        • Total revenue: ₹130<br><br>
+                        
+                        <strong>Costs per order:</strong><br>
+                        • Delivery partner: ₹60<br>
+                        • Tech infrastructure: ₹10<br>
+                        • Customer support: ₹5<br>
+                        • Marketing: ₹80<br>
+                        • Total cost: ₹155<br><br>
+                        
+                        <strong>Unit Economics: -₹25 (LOSS)</strong>
+                    </div>
+                </div>
+                
+                <p>Many startups lose money per transaction initially, betting on future profitability at scale.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">
+                <span class="section-icon">📊</span>
+                CAC vs LTV - The Critical Ratio
+            </h2>
+            <div class="section-content">
+                <div class="info-box">
+                    <div class="info-label">CAC (Customer Acquisition Cost)</div>
+                    <div class="info-text">
+                        How much it costs to get one customer<br><br>
+                        <strong>Example:</strong> ₹50,000 spent on ads → 500 signups = ₹100 CAC
+                    </div>
+                </div>
+                
+                <div class="info-box">
+                    <div class="info-label">LTV (Lifetime Value)</div>
+                    <div class="info-text">
+                        Total revenue from one customer over their lifetime<br><br>
+                        <strong>Example:</strong> ₹500/month × 8 months = ₹4,000 LTV
+                    </div>
+                </div>
+                
+                <div class="subsection">
+                    <div class="subsection-title">The Golden Rule</div>
+                    <p><strong>LTV should be 3x or more than CAC</strong></p>
+                    <ul>
+                        <li>LTV ₹4,000 vs CAC ₹100 = Excellent (40x)</li>
+                        <li>LTV ₹4,000 vs CAC ₹3,000 = Risky (1.3x)</li>
+                        <li>LTV ₹4,000 vs CAC ₹5,000 = Unsustainable</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">
+                <span class="section-icon">🔥</span>
+                The Burn Rate Concept
+            </h2>
+            <div class="section-content">
+                <p><strong>Definition:</strong> How fast a startup spends money (monthly)</p>
+                
+                <div class="example-box">
+                    <div class="example-title">Monthly Expenses Breakdown</div>
+                    <div class="example-text">
+                        • Salaries (5 people): ₹5,00,000<br>
+                        • Office rent: ₹50,000<br>
+                        • Cloud services: ₹30,000<br>
+                        • Marketing: ₹2,00,000<br>
+                        • Miscellaneous: ₹20,000<br><br>
+                        
+                        <strong>Total Burn Rate: ₹8,00,000/month</strong><br><br>
+                        
+                        <strong>If funding raised: ₹2 Crore</strong><br>
+                        <strong>Runway: 25 months</strong>
+                    </div>
+                </div>
+                
+                <p>Must achieve profitability or raise more funding before runway ends.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">
+                <span class="section-icon">📈</span>
+                Real Company Revenue Models
+            </h2>
+            <div class="section-content">
+                
+                <div class="subsection">
+                    <div class="subsection-title">Zepto (Quick Commerce)</div>
+                    <p><strong>Model:</strong> Commission + delivery fees<br>
+                    <strong>Revenue per order:</strong> ₹50-80<br>
+                    <strong>Orders:</strong> 5L+ daily<br>
+                    <strong>Monthly revenue:</strong> ~₹100Cr+<br>
+                    <strong>Status:</strong> Loss-making (high operational costs)</p>
+                </div>
+                
+                <div class="subsection">
+                    <div class="subsection-title">Razorpay (Fintech)</div>
+                    <p><strong>Model:</strong> Transaction fees (2%)<br>
+                    <strong>Processes:</strong> ₹10L Cr+ annually<br>
+                    <strong>Revenue:</strong> ~₹2,000Cr/year<br>
+                    <strong>Status:</strong> Profitable in some quarters</p>
+                </div>
+                
+                <div class="subsection">
+                    <div class="subsection-title">Boat (D2C)</div>
+                    <p><strong>Model:</strong> Direct sales<br>
+                    <strong>Average price:</strong> ₹2,000<br>
+                    <strong>Units sold:</strong> 50L+/year<br>
+                    <strong>Revenue:</strong> ₹3,000Cr+<br>
+                    <strong>Profit margin:</strong> 8-10%</p>
+                </div>
+                
+                <div class="subsection">
+                    <div class="subsection-title">Cred (Fintech)</div>
+                    <p><strong>Model:</strong> Evolving (lending partnerships)<br>
+                    <strong>Revenue:</strong> ₹2,000Cr+<br>
+                    <strong>Burns:</strong> ₹1,500Cr/year<br>
+                    <strong>Status:</strong> Not profitable (focus on user growth)</p>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">
+                <span class="section-icon">📉</span>
+                Why Many Startups Don't Make Money
+            </h2>
+            <div class="section-content">
+                <ul>
+                    <li><strong>Market Capture Strategy:</strong> Intentionally lose money to dominate market (Example: Jio lost ₹50,000Cr initially)</li>
+                    <li><strong>Winner-Takes-All Markets:</strong> Race to grow fast, only top 2-3 survive (Ola vs Uber)</li>
+                    <li><strong>High CAC:</strong> Spending more to acquire customers than they're worth</li>
+                    <li><strong>Poor Unit Economics:</strong> Costs don't improve with scale</li>
+                    <li><strong>Wrong Revenue Model:</strong> Monetizing wrong aspect of business</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">
+                <span class="section-icon">⏱️</span>
+                Time to Profitability
+            </h2>
+            <div class="section-content">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">3-4 yrs</div>
+                        <div class="stat-label">B2B SaaS</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5-7 yrs</div>
+                        <div class="stat-label">Consumer Apps</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">6-8 yrs</div>
+                        <div class="stat-label">Marketplaces</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">Never</div>
+                        <div class="stat-label">Some Startups</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="takeaway-box">
+            <div class="takeaway-title">📌 Key Takeaways</div>
+            <ul>
+                <li>Revenue model determines how startup makes money</li>
+                <li>Unit economics must work (revenue > cost per transaction)</li>
+                <li>CAC must be much lower than LTV (ideally 1:3 ratio)</li>
+                <li>Burn rate determines survival runway</li>
+                <li>Not all startups need immediate profitability</li>
+                <li>Indian startups typically take 5-7 years to profit</li>
+                <li>SaaS and D2C are naturally more profitable</li>
+                <li>Marketplaces and consumer apps take longer</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-title">Tomorrow's Topic</div>
+            <div class="next-topic">
+                <strong>DAY 3:</strong> Building Your First MVP<br>
+                <small>From idea to working prototype in 2 weeks</small>
+            </div>
+            
+            <!-- Feedback Section -->
+            <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #e2e8f0;">
+                <div id="feedbackSection">
+                    <div style="text-align: center; margin-bottom: 1.5rem;">
+                        <div style="font-size: 1.3rem; font-weight: 700; color: #2d3748; margin-bottom: 0.5rem;">
+                            How was today's content? 🤔
+                        </div>
+                        <div style="font-size: 0.9rem; color: #718096;">
+                            Your feedback helps us improve!
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1rem;">
+                        <button class="feedback-btn" data-rating="5">
+                            <span style="font-size: 2rem;">🔥</span>
+                            <span style="display: block; font-size: 0.8rem; margin-top: 0.3rem; font-weight: 600;">Amazing</span>
+                        </button>
+                        <button class="feedback-btn" data-rating="4">
+                            <span style="font-size: 2rem;">😊</span>
+                            <span style="display: block; font-size: 0.8rem; margin-top: 0.3rem; font-weight: 600;">Good</span>
+                        </button>
+                        <button class="feedback-btn" data-rating="3">
+                            <span style="font-size: 2rem;">😐</span>
+                            <span style="display: block; font-size: 0.8rem; margin-top: 0.3rem; font-weight: 600;">Okay</span>
+                        </button>
+                        <button class="feedback-btn" data-rating="2">
+                            <span style="font-size: 2rem;">😕</span>
+                            <span style="display: block; font-size: 0.8rem; margin-top: 0.3rem; font-weight: 600;">Not Great</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="feedbackThanks" style="display: none; text-align: center; padding: 2rem 1rem;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">✨</div>
+                    <div style="font-size: 1.3rem; font-weight: 700; color: #10b981; margin-bottom: 0.5rem;">
+                        Thanks for your feedback!
+                    </div>
+                    <div style="font-size: 0.9rem; color: #718096;">
+                        See you tomorrow with Day 3! 🚀
+                    </div>
+                </div>
+                
+                <!-- Admin Stats (Hidden by default) -->
+                <div id="adminStats" style="display: none; margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 16px; border: 2px solid #0ea5e9;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                        <div style="font-size: 1rem; font-weight: 700; color: #0c4a6e;">
+                            🔒 Admin Dashboard
+                        </div>
+                        <button onclick="exportFeedback()" style="background: #0ea5e9; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.75rem; cursor: pointer; font-weight: 600;">
+                            Export Data
+                        </button>
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="text-align: center; background: white; padding: 1rem; border-radius: 12px;">
+                            <div style="font-size: 2rem; font-weight: 700; color: #0ea5e9;" id="totalResponses">0</div>
+                            <div style="color: #64748b; font-size: 0.75rem; margin-top: 0.3rem;">Total Responses</div>
+                        </div>
+                        <div style="text-align: center; background: white; padding: 1rem; border-radius: 12px;">
+                            <div style="font-size: 2rem; font-weight: 700; color: #10b981;" id="avgRating">0.0</div>
+                            <div style="color: #64748b; font-size: 0.75rem; margin-top: 0.3rem;">Avg Rating</div>
+                        </div>
+                        <div style="text-align: center; background: white; padding: 1rem; border-radius: 12px;">
+                            <div style="font-size: 2rem; font-weight: 700; color: #f59e0b;" id="engagementRate">0%</div>
+                            <div style="color: #64748b; font-size: 0.75rem; margin-top: 0.3rem;">Engagement</div>
+                        </div>
+                    </div>
+                    <div style="background: white; padding: 1rem; border-radius: 12px;">
+                        <div style="font-size: 0.85rem; font-weight: 600; color: #475569; margin-bottom: 0.8rem;">Rating Distribution</div>
+                        <div id="ratingBars"></div>
+                    </div>
+                    <div style="margin-top: 1rem; padding: 0.8rem; background: white; border-radius: 8px; font-size: 0.75rem; color: #64748b;">
+                        💡 <strong>Tip:</strong> Share feedback form prominently in WhatsApp. Higher engagement = better insights!
+                    </div>
+                </div>
+            </div>
+            
+            <p style="margin-top: 1.5rem; color: #718096; font-size: 0.9rem;">
+                💬 Have questions? Drop them in the group!<br>
+                🔥 Found this helpful? Share with fellow entrepreneurs!
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // Scroll progress bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+        
+        // Feedback System
+        const ADMIN_PASSWORD = 'shs2024'; // Change this to your secret password
+        const feedbackData = {
+            ratings: [],
+            uniqueUsers: new Set(),
+            timestamp: Date.now()
+        };
+        
+        // Generate unique user ID
+        function getUserId() {
+            let userId = localStorage.getItem('shs_user_id');
+            if (!userId) {
+                userId = 'user_' + Math.random().toString(36).substr(2, 9) + '_' + Date.now();
+                localStorage.setItem('shs_user_id', userId);
+            }
+            return userId;
+        }
+        
+        // Check if user already gave feedback
+        function hasUserVoted() {
+            const userId = getUserId();
+            const voted = localStorage.getItem('day2_voted_' + userId);
+            return voted === 'true';
+        }
+        
+        // Mark user as voted
+        function markUserVoted() {
+            const userId = getUserId();
+            localStorage.setItem('day2_voted_' + userId, 'true');
+        }
+        
+        // Load existing data
+        function loadFeedbackData() {
+            try {
+                const saved = localStorage.getItem('day2_feedback_data');
+                if (saved) {
+                    const parsed = JSON.parse(saved);
+                    feedbackData.ratings = parsed.ratings || [];
+                    feedbackData.uniqueUsers = new Set(parsed.uniqueUsers || []);
+                }
+            } catch (e) {
+                console.error('Error loading feedback data:', e);
+            }
+            updateStats();
+        }
+        
+        // Save feedback data
+        function saveFeedbackData() {
+            const dataToSave = {
+                ratings: feedbackData.ratings,
+                uniqueUsers: Array.from(feedbackData.uniqueUsers),
+                lastUpdated: new Date().toISOString()
+            };
+            localStorage.setItem('day2_feedback_data', JSON.stringify(dataToSave));
+        }
+        
+        // Check if user already voted
+        if (hasUserVoted()) {
+            document.getElementById('feedbackSection').style.display = 'none';
+            document.getElementById('feedbackThanks').style.display = 'block';
+        }
+        
+        // Handle feedback button clicks
+        document.querySelectorAll('.feedback-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (hasUserVoted()) {
+                    alert('You have already submitted feedback. Thanks! 🙏');
+                    return;
+                }
+                
+                const rating = parseInt(this.dataset.rating);
+                const userId = getUserId();
+                
+                // Visual feedback
+                document.querySelectorAll('.feedback-btn').forEach(b => {
+                    b.classList.remove('selected');
+                    b.disabled = true;
+                });
+                this.classList.add('selected');
+                
+                // Save rating
+                feedbackData.ratings.push({
+                    rating: rating,
+                    userId: userId,
+                    timestamp: new Date().toISOString()
+                });
+                feedbackData.uniqueUsers.add(userId);
+                saveFeedbackData();
+                markUserVoted();
+                
+                // Show thank you
+                setTimeout(() => {
+                    document.getElementById('feedbackSection').style.display = 'none';
+                    document.getElementById('feedbackThanks').style.display = 'block';
+                }, 600);
+                
+                // Update stats
+                updateStats();
+            });
+        });
+        
+        // Update statistics display
+        function updateStats() {
+            const ratings = feedbackData.ratings;
+            if (ratings.length === 0) return;
+            
+            const total = ratings.length;
+            const sum = ratings.reduce((acc, r) => acc + r.rating, 0);
+            const avg = (sum / total).toFixed(1);
+            
+            // Calculate engagement rate (assuming 50 views for example)
+            const engagementRate = Math.min(100, (total * 2)).toFixed(0);
+            
+            // Count each rating
+            const counts = {5: 0, 4: 0, 3: 0, 2: 0};
+            ratings.forEach(r => counts[r.rating]++);
+            
+            // Update display
+            document.getElementById('totalResponses').textContent = total;
+            document.getElementById('avgRating').textContent = avg;
+            document.getElementById('engagementRate').textContent = engagementRate + '%';
+            
+            // Create rating bars
+            const labels = {5: '🔥 Amazing', 4: '😊 Good', 3: '😐 Okay', 2: '😕 Not Great'};
+            let barsHTML = '';
+            [5, 4, 3, 2].forEach(rating => {
+                const count = counts[rating];
+                const percentage = total > 0 ? (count / total * 100) : 0;
+                barsHTML += `
+                    <div class="rating-bar">
+                        <div class="rating-bar-label">${labels[rating]}</div>
+                        <div class="rating-bar-fill">
+                            <div class="rating-bar-inner" style="width: ${percentage}%"></div>
+                        </div>
+                        <div class="rating-bar-count">${count}</div>
+                    </div>
+                `;
+            });
+            document.getElementById('ratingBars').innerHTML = barsHTML;
+        }
+        
+        // Admin mode check
+        function checkAdminAccess() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const adminKey = urlParams.get('admin');
+            
+            if (adminKey === ADMIN_PASSWORD) {
+                loadFeedbackData();
+                document.getElementById('adminStats').style.display = 'block';
+                // Scroll to stats
+                setTimeout(() => {
+                    document.getElementById('adminStats').scrollIntoView({ behavior: 'smooth' });
+                }, 500);
+            }
+        }
+        
+        // Export data function (for admin)
+        function exportFeedback() {
+            const data = {
+                totalResponses: feedbackData.ratings.length,
+                uniqueUsers: feedbackData.uniqueUsers.size,
+                ratings: feedbackData.ratings,
+                summary: {
+                    amazing: feedbackData.ratings.filter(r => r.rating === 5).length,
+                    good: feedbackData.ratings.filter(r => r.rating === 4).length,
+                    okay: feedbackData.ratings.filter(r => r.rating === 3).length,
+                    notGreat: feedbackData.ratings.filter(r => r.rating === 2).length
+                },
+                averageRating: (feedbackData.ratings.reduce((acc, r) => acc + r.rating, 0) / feedbackData.ratings.length).toFixed(2)
+            };
+            
+            console.log('📊 Day 2 Feedback Export:', data);
+            
+            // Create downloadable file
+            const dataStr = JSON.stringify(data, null, 2);
+            const dataBlob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'day2_feedback_' + new Date().toISOString().split('T')[0] + '.json';
+            link.click();
+            
+            alert(`✅ Exported!\n\nTotal: ${data.totalResponses} responses\nAvg Rating: ${data.averageRating}/5\n\nCheck Downloads folder for JSON file.`);
+        }
+        
+        // Initialize
+        loadFeedbackData();
+        checkAdminAccess();
+    </script>
+</body>
+</html>
